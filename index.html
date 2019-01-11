@@ -3,26 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pink</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/rate.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="page-header">
-		<a href="#" class="page-header__logo">
-			<img src="#" alt="Лого" class="page-header__logo-image">
-		</a>
+	<header class="page-header conteiner">
 		<nav class="main-nav">
+			<a href="#" class="main-nav__logo">
+				<img src="img/logotype-white-mobile.png" alt="Лого" class="main-nav__logo-image">
+			</a>
 			<button class="main-nav__toggle"></button>
 		</nav>
 		<a href="#" class="page-header__download">Скачать приложение</a>
 		<ul class="page-header__list brend-list">
-			<li class="brend-list__item"><img src="#" alt="Ios" class="brend-list__image--ios"></li>
-			<li class="brend-list__item"><img src="#" alt="Android" class="brend-list__image--android"></li>
-			<li class="brend-list__item"><img src="#" alt="Windows" class="brend-list__image--windows"></li>
+			<li class="brend-list__item"><img src="img/apple-logo.png" alt="Ios" class="brend-list__image--ios"></li>
+			<li class="brend-list__item"><img src="img/android-logo.png" alt="Android" class="brend-list__image--android"></li>
+			<li class="brend-list__item"><img src="img/microsoft-logo.png" alt="Windows" class="brend-list__image--windows"></li>
 		</ul>
 		<p class="page-header-description">Доступно для iPhone, iPad, Android, <br>
 		Windows Phone, OS X, Windows 8</p>
 	</header>
 	<main class="page-main">
-		<section class="advantages">
+		<section class="advantages conteiner">
 			<h1 class="advantages__title-top">Устали от серости мегаполиса?</h1>
 			<h1 class="advantages__title-bottom">Нам есть, что вам предложить!</h1>
 			<ul class="advantages__list">
@@ -45,12 +48,12 @@
 					заводите новых</p>
 				</li>
 			</ul>
-			<img src="#" alt="Phone" class="advantages-image">
+			<img src="img/iphone screen.png" alt="Phone" class="advantages__image">
 		</section>
-		<section class="reviews">
+		<section class="reviews conteiner">
 			<div class="reviews__wrapper slider">
 				<ul class="reviews__list slider__list">
-					<li class="reviews__item slider__item">
+					<li class="reviews__item reviews__item--current slider__item">
 						<h2 class="reviews__title">Николай Петров</h2>
 						<p class="reviews__description">«Это приложение перевернуло мой мир <br>
 						и позволило по-новому взглянуть на <br>
@@ -68,34 +71,46 @@
 						<p class="reviews__description"></p>
 					</li>
 				</ul>
-			<p class="reviews__toggles slider__toggles">
-				<button class="slider__toggles"></button>
+			<p class="reviews__toggles slider">
+				<button class="slider__toggles slider__toggles--current"></button>
 				<button class="slider__toggles"></button>
 				<button class="slider__toggles"></button>
 			</p>
 			</div>
 		</section>
-		<section class="rate">
+		<section class="rate conteiner">
 			<ul class="rate__list">
 				<li class="rate__item">
+					<h2 class="rate__title">Стандарт1</h2>
+					<b class="rate__price">3,99 Usd</b>
+					<ul class="rate-name__list">
+						<li class="rate-name__item rate-name__item--current">Розовый фильтр</li>
+						<li class="rate-name__item">Смайлики</li>
+						<li class="rate-name__item">Комментарии</li>
+					</ul>
+				</li>
+				<li class="rate__item rate__item--hit">
 					<h2 class="rate__title">Стандарт</h2>
 					<b class="rate__price">3,99 Usd</b>
-					<p class="rate__name rate__name--current">Розовый фильтр</p>
+					<ul class="rate-name__list">
+						<li class="rate-name__item rate-name__item--current">Розовый фильтр</li>
+						<li class="rate-name__item rate-name__item--current">Смайлики</li>
+						<li class="rate-name__item">Комментарии</li>
+					</ul>
 				</li>
 				<li class="rate__item">
-					<h2 class="rate__title"></h2>
-					<b class="rate__price"></b>
-					<p class="rate__name rate__name--current">Смайлики</p>
-				</li>
-				<li class="rate__item">
-					<h2 class="rate__title"></h2>
-					<b class="rate__price"></b>
-					<p class="rate__name rate__name--current">Комментарии</p>
+					<h2 class="rate__title">Стандарт3</h2>
+					<b class="rate__price">3,99 Usd</b>
+					<ul class="rate-name__list">
+						<li class="rate-name__item rate-name__item--current">Розовый фильтр</li>
+						<li class="rate-name__item rate-name__item--current">Смайлики</li>
+						<li class="rate-name__item">Комментарии</li>
+					</ul>
 				</li>
 			</ul>
-			<p class="rate__toggles slider__toggles">
+			<p class="rate__toggles slider">
 				<button class="slider__toggles"></button>
-				<button class="slider__toggles"></button>
+				<button class="slider__toggles slider__toggles--current"></button>
 				<button class="slider__toggles"></button>
 			</p>
 		</section>
