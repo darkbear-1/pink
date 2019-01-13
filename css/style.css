@@ -1,9 +1,32 @@
-@import url(page-header.css);
-@import url(advantages.css);
-@import url(reviews.css);
+@import url(blocks/page-header.css);
+@import url(blocks/advantages.css);
+@import url(blocks/reviews.css);
+@import url(blocks/rate.css);
+@import url(blocks/page-footer.css);
+@import url(blocks/gallery.css);
+@import url(blocks/filter.css);
+@import url(blocks/photo-footer.css);
+@import url(blocks/feedback.css);
+
 
 body {
 	padding: 0;
 	margin: 0;
 	font-family: "Open Sans", Arial, sans-serif;
+}
+
+.page-conteiner {
+	width: 320px;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.conteiner {
+	width: 320px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
 }

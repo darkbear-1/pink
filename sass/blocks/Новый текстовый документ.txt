@@ -1,0 +1,75 @@
+@import 'mixins';
+
+.feedback__title {
+	text-align: center;
+	@include text_param(14px,30px,400,#283645);
+	margin: 0;
+	margin-top: 45px;
+}
+
+.feedback__form {
+	margin-top: 34px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.feedback__user {
+	text-transform: uppercase;
+	width: 100%;
+	padding-left: 45px;
+	@include text_param(14px,30px,400,#d22856);
+}
+
+.feedback__text {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 18px;
+	box-sizing: border-box;
+	padding: 22px 0px;
+	padding-left: 20px;
+	border: 2px solid #e5e5e5;
+	&::placeholder {
+		@include text_param(18px,30px,400,#283645);
+	}
+}
+
+.achievements {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	margin-top: 22px;
+	background-color: #f2f2f2;
+}	
+
+.achievements__legend {
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 38px;
+	margin-bottom: 42px;
+	@include text_param(14px,18px,400,#d22856);
+}
+
+.achievements__checkbox-option {
+	display: block;
+	position: relative;
+	padding-left: 90px;
+	margin-bottom: 53px;
+	@include text_param(18px,30px,400,#283645);
+}
+
+.achievements__checkbox {
+	display: none;
+}
+
+.achievements__checkbox-indicator {
+	position: absolute;
+	left: 19px;
+	top: 50%;
+	margin-top: -19px;
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #e5e5e5;
+	background-color: #fff;
+}

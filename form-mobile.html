@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/blocks/feedback.css">
+</head>
+<body>
+	<header class="page-header page-header--photo page-conteiner">
+		<div class="conteiner">
+			<nav class="main-nav">
+				<a href="#" class="main-nav__logo">
+					<img src="img/logotype-white-mobile.png" alt="Лого" class="main-nav__logo-image">
+				</a>
+				<button class="main-nav__toggle"></button>
+			</nav>
+			<h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+		</div>
+	</header>
+	<section class="feedback conteiner">
+		<h2 class="feedback__title">Поделитесь своей историей и получите <br>
+		шанс выиграть ценный приз — 1000 <br>
+		миль на вашу бонусную карту!</h2>
+			<form action="#" class="feedback__form" method="post">
+					<label for="feedback__surname" class="feedback__user">Фамилия</label>
+					<input type="text" id="feedback__surname" class="feedback__text" placeholder="Укажите фамилию *">
+					<label for="feedback__username" class="feedback__user">Имя</label>
+					<input type="text" id="feedback__username" class="feedback__text" placeholder="Введите ваше имя *"></label>
+					<label for="feedback__patronymic" class="feedback__user">Отчество</label>
+					<input type="text" id="feedback__patronymic" class="feedback__text" placeholder="Ну и отчество тоже *">
+				<fieldset class="achievements">
+					<div class="conteiner">
+						<legend class="achievements__legend">Ваши безбашенные <br> достижения в путешествии</legend>
+						<label class="achievements__checkbox-option"><input class="achievements__checkbox" type="checkbox" checked><span class="achievements__checkbox-indicator"></span>Сделал селфи с акулой</label>
+						<label class="achievements__checkbox-option"><input class="achievements__checkbox" type="checkbox"><span class="achievements__checkbox-indicator"></span>Обгорел на пляже</label>
+						<label class="achievements__checkbox-option"><input class="achievements__checkbox" type="checkbox" checked><span class="achievements__checkbox-indicator"></span>Видел Чака Норриса</label>
+						<label class="achievements__checkbox-option"><input class="achievements__checkbox" type="checkbox"><span class="achievements__checkbox-indicator"></span>Накупил сувениров</label>
+						<label class="achievements__checkbox-option"><input class="achievements__checkbox" type="checkbox" checked><span class="achievements__checkbox-indicator"></span>Удержал башню</label>
+						<label class="achievements__checkbox-option"><input class="achievements__checkbox" type="checkbox"><span class="achievements__checkbox-indicator"></span>Разгромил отель</label>
+					</div>
+				</fieldset>
+				<label for="feedback__number" class="feedback__data">Номер телефона</label>
+				<input type="text" id="feedback__number" class="feedback__data-text" placeholder="Номер, пожалуйста">
+				<label for="feedback__mail" class="feedback__data">Адрес почты</label>
+				<input type="text" id="feedback__mail" class="feedback__data-text" placeholder="Введите почту *">
+				<fieldset class="attachment">
+					<div class="conteiner">
+						<legend class="attachment__legend">С каким приложением путешествовали?</legend>
+						<label class="attachment__option"><input type="radio" name="attachment-group" class="attachment__radio" checked><span class="attachment__radio-indicator"></span>Pink для iOS</label>
+						<label class="attachment__option"><input type="radio" name="attachment-group" class="attachment__radio"><span class="attachment__radio-indicator"></span>Pink на Android</label>
+						<label class="attachment__option"><input type="radio" name="attachment-group" class="attachment__radio"><span class="attachment__radio-indicator"></span>Windows Phone</label>
+					</div>
+				</fieldset>
+				<label for="feedback__emotions-input" class="feedback__emotions">Опишите свои эмоции</label>
+				<textarea id="feedback__emotions-input" class="feedback__emotions-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+				<button type="submit" class="feedback__button">Отправить форму</button>
+				<p class="feedback__required"><span class="feedback__requires-span">*</span> — обязательные поля</p>
+			</form>
+	</section>
+	<footer class="photo-footer conteiner">
+		<img src="img/logotype-blue-tablet.png" alt="" class="photo-footer__logo-image">
+		<ul class="photo-footer__list social">
+			<li class="photo-footer__item social__item"><a href="#" class="social__item-link">Твиттер</a></li>
+			<li class="photo-footer__item social__item"><a href="#" class="social__item-link social__item-link--facebook">Фейсбук</a></li>
+			<li class="photo-footer__item social__item"><a href="#" class="social__item-link social__item-link--youtube">Ютуб</a></li>
+		</ul>
+		<a href="#" class="photo-footer__copyright-link">Разработано</a>
+	</footer>
+</body>
+</html>

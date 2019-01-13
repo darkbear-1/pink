@@ -1,20 +1,33 @@
-
-
-.conteiner {
-	width: 320px;
-	display: block;
-	margin: 0 auto;
-	padding: 0 20px;
-	box-sizing: border-box;
-}
-
+@import 'mixins';
 .page-header {
 	background-color: #1d2632;
-	background-image: url(../img/iphone-5-in-hand.jpg);
+	background-image: url(../../img/iphone-5-in-hand.jpg);
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
 	height: 732px;
+	&--photo {
+		position: relative;
+		display: block;
+		height: 237px;
+		text-align: center;
+		background-image: url(../../img/back-mobile.jpg);
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 66px;
+			width: 100%;
+			background-color: rgba(0,0,0,0.3);
+		}
+	}
+}
+
+.page-header__title {
+	@include text_param(24px,normal,300,#fff);
+	margin: 0;
+	margin-top: 44px;
 }
 
 .main-nav {
@@ -22,6 +35,8 @@
 	justify-content: space-between;
 	padding-top: 21px;
 	flex-grow: 1;
+	position: relative;
+	z-index: 1;
 }
 
 .main-nav__toggle {
@@ -46,24 +61,24 @@
 	}
 }
 
-.page-header__download {
+.button {
+	@include button-reset;
 	display: inline-block;
 	text-decoration: none;
-	font-size: 18px;
-	line-height: 18px;
-	font-weight: 700;
-	color: #fff;
+	@include text_param(18px,18px,700,#fff);
 	border: 3px solid #fff;
-	padding: 16px 10px;
+	padding: 15px 10px;
 	text-align: center;
 	border-radius: 25px;
+}
+
+.page-header__download {
 	margin-bottom: 34px;
 }
 
 .brend-list {
+	@include reset-list;
 	padding: 0 38px;
-	margin: 0;
-	list-style: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

@@ -1,0 +1,36 @@
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin text_param($fz: 14px,$lh: 24px,$fw: 400,$color: #000) {
+	font-weight: $fw;
+	font-size: $fz;
+	line-height: $lh;
+	color: $color;
+}
+
+@mixin button-reset {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+@mixin input-style() {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 19px;
+	box-sizing: border-box;
+	padding: 20px 0px;
+	padding-left: 20px;
+	border: 2px solid #e5e5e5;
+	font-family: "Open Sans", Arial, sans-serif;
+	&::placeholder {
+		font-family: "Open Sans", Arial, sans-serif;
+		@include text_param(18px,30px,400,#283645);
+	}
+}

@@ -1,0 +1,74 @@
+@import 'mixins';
+
+.page-footer {
+	text-align: center;
+	position: relative;
+	padding-bottom: 217px;
+}
+
+.page-footer__title {
+	margin: 0;
+	margin-top: 37px;
+	font-size: 24px;
+	font-weight: 300;
+	color: #283645;
+	margin-bottom: 30px;
+}
+
+.page-footer__list {
+	@include reset-list;
+}
+
+.page-footer__item-title {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+	color: #283645;
+}
+
+.page-footer__description {
+	font-size: 24px;
+	display: inline-block;
+	font-weight: 300;
+	color: #d22856;
+	margin-bottom: 18px;
+}
+
+.page-footer__description--mail {
+	margin-bottom: 23px;
+}
+
+.page-footer__map {
+	position: absolute;
+	overflow: hidden;
+	bottom: 0;
+	left: 0;
+	height: 215px;
+	width: 100%;
+	background-image: url(../../img/map.png);
+	background-repeat: no-repeat;
+	background-position: 0px -430px;
+
+	&:after {
+		content:'';
+		position: absolute;
+		top: -102px;
+		right: 50%;
+		margin-right: -150px;
+		border-width: 150px;
+		border-style: solid;
+		border-color: #fff transparent transparent transparent;
+		transform: rotate(33deg);
+	}
+	&:before {
+		content:'';
+		position: absolute;
+		top: -102px;
+		left: 50%;
+		margin-left: -150px;
+		border-width: 150px;
+		border-style: solid;
+		border-color: #fff transparent transparent transparent;
+		transform: rotate(-33deg);
+	}
+}

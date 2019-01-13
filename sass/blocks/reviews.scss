@@ -1,4 +1,4 @@
-
+@import 'mixins';
 
 
 .reviews__wrapper {
@@ -6,16 +6,20 @@
 }
 
 .reviews__list {
-	padding: 0;
-	margin: 0;
-	list-style: none;
+	@include reset-list;
+	height: 264px;
+	position: relative;
 	margin-bottom: 33px;
 }
 
 .reviews__item {
-	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scale(0);
 	&--current {
-		display: block;
+		transform: scale(1);
+		transition: 0.4s ease-in-out;
 	}
 }
 
@@ -33,7 +37,7 @@
 	color: #283645;
 }
 
-.reviews__toggles {
+.slider {
 	margin: 0;
 	padding: 0 111px;
 	display: flex;
@@ -45,10 +49,12 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
+	outline: 0;
 	border-radius: 50%;
 	width: 6px;
 	height: 6px;
 	background-color: #bec2c7;
+	cursor: pointer;
 	&--current {
 		width: 12px;
 		height: 12px;

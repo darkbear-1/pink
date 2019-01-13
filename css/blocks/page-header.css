@@ -1,23 +1,40 @@
-.conteiner {
-  width: 320px;
-  display: block;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
-
 .page-header {
   background-color: #1d2632;
-  background-image: url(../img/iphone-5-in-hand.jpg);
+  background-image: url(../../img/iphone-5-in-hand.jpg);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   height: 732px; }
+  .page-header--photo {
+    position: relative;
+    display: block;
+    height: 237px;
+    text-align: center;
+    background-image: url(../../img/back-mobile.jpg); }
+    .page-header--photo:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 66px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3); }
+
+.page-header__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
+  color: #fff;
+  margin: 0;
+  margin-top: 44px; }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
   padding-top: 21px;
-  flex-grow: 1; }
+  flex-grow: 1;
+  position: relative;
+  z-index: 1; }
 
 .main-nav__toggle {
   outline: 0;
@@ -39,23 +56,32 @@
     margin-top: -2.5px;
     background-color: #fff; }
 
-.page-header__download {
+.button {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
   display: inline-block;
   text-decoration: none;
+  font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  font-weight: 700;
   color: #fff;
   border: 3px solid #fff;
-  padding: 16px 10px;
+  padding: 15px 10px;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 25px; }
+
+.page-header__download {
   margin-bottom: 34px; }
 
 .brend-list {
-  padding: 0 38px;
   margin: 0;
+  padding: 0;
   list-style: none;
+  padding: 0 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
